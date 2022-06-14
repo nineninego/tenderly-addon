@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "tenderly",
+    "version": "1.0",
+    "description": "direct links to tenderly",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.etherscan.io/tx/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
